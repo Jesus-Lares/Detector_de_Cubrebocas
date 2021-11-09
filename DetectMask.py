@@ -30,7 +30,7 @@ with mp_face_detection.FaceDetection(min_detection_confidence=.5) as face_detect
                 face_image = frame[ymin:ymin+h,xmin:xmin+w]
                 face_image = cv2.cvtColor(face_image,cv2.COLOR_BGR2GRAY)
                 face_image = cv2.resize(face_image,(72,72),interpolation=cv2.INTER_CUBIC)
-                "cv2.imshow("face_image",face_image)
+                #cv2.imshow("face_image",face_image)
                 
                 result = recognition.predict(face_image)
                 cv2.putText(frame,f"{result}",(xmin,ymin-5),1,1.3,(210,124,176),1,cv2.LINE_AA)
