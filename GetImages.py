@@ -3,7 +3,7 @@ import mediapipe as mp
 import os
 
 direction = "E:/7_semestre/vison_artificial/Detector_de_Cubrebocas/Images"
-name="Without_mask"
+name="Train/WithoutMask"
 folder = f"{direction}/{name}"
 
 if not os.path.exists(folder):

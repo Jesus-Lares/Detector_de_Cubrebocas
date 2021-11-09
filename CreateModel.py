@@ -29,5 +29,5 @@ print("Etiqueta 1: ",np.count_nonzero(np.array(labels)==1)," sin cubrebocas")
 recognition = cv2.face.LBPHFaceRecognizer_create()
 recognition.train(faces,np.array(labels))
 
-recognition.write("./Models/ModeloTrain.xml")
+recognition.write("./Models/ModelTrain.xml")
 print("Modelo Creado")
